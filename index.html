@@ -11,10 +11,12 @@
 	<script type="text/javascript" src="js/ping.js"></script>
 	<script type="text/javascript">
 		 $(document).ready(function() {
-        $("form#checky").submit(function(event) {
+        $("form#theff").submit(function(event) {
           event.preventDefault();
           var unumber = parseInt($("#unumber").val());
-          alert( ping(unumber) );
+          //alert( ping(unumber) );
+          var result = ping(unumber);
+          $("#output").html( "<li>"+result+"</li>");
         });
       });
 	</script>
@@ -26,7 +28,7 @@
 	<main>
 		<div class="container">
 			<div class="jumbotron">
-			<form class="form">
+			<form class="form" id="theff">
 			<p>Ping Pong will count up to your numberfrom 1 with the following exceptions:</p>
 			<ol>
 				<li>Numbers divisible by 3 become "ping"</li>
@@ -35,6 +37,7 @@
 			</ol>
 			<p>Enter your number here: <input type="number" name="unumber" id="unumber"> <button type="submit" id="checky" name="checky">Submit</button></p>
 		</form>
+		<ul id="output"></ul>
 		</div>
 		</div>
 	</main>
