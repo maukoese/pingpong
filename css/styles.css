@@ -6,9 +6,18 @@ html{
     "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
-body main{
-	height: 100%;
-	display: block;
+body {
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+}
+
 a{
 	text-decoration: none;
 }
