@@ -15,8 +15,11 @@
           event.preventDefault();
           var unumber = parseInt($("#unumber").val());
           //alert( ping(unumber) );
-          var result = ping(unumber);
-          $("#output").html( "<li>"+result+"</li>");
+          var result = pong(unumber);
+          var data = result.map( function (argy) {
+          	return "<li>"+argy+"</li>";
+          });
+          $("#output").html( data);
         });
       });
 	</script>
