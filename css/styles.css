@@ -5,6 +5,10 @@ html{
     "Ubuntu", "Cantarell", "Fira Sans", 
     "Droid Sans", "Helvetica Neue", sans-serif;
 }
+
+body main{
+	height: 100%;
+	display: block;
 a{
 	text-decoration: none;
 }
@@ -25,4 +29,10 @@ header{
 
 .form{
 	margin: auto;
+}
+
+.right{
+	float: right;
+	text-align: right;
+	padding-right: 20px;
 }
